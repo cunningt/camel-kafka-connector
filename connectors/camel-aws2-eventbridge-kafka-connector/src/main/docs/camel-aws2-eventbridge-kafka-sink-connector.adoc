@@ -34,7 +34,7 @@ The camel-aws2-eventbridge sink connector supports 31 options, which are listed 
 | *camel.sink.endpoint.eventbridgeClient* | To use a existing configured AWS Eventbridge as client | null | MEDIUM
 | *camel.sink.endpoint.eventPatternFile* | EventPattern File | null | MEDIUM
 | *camel.sink.endpoint.lazyStartProducer* | Whether the producer should be started lazy (on the first message). By starting lazy you can use this to allow CamelContext and routes to startup in situations where a producer may otherwise fail during starting and cause the route to fail being started. By deferring this startup to be lazy then the startup failure can be handled during routing messages via Camel's routing error handlers. Beware that when the first message is processed then creating and starting the producer may take a little time and prolong the total processing time of the processing. | false | MEDIUM
-| *camel.sink.endpoint.operation* | The operation to perform One of: [putRule] [putTargets] [removeTargets] [deleteRule] [enableRule] [disableRule] [listRules] | "putRule" | HIGH
+| *camel.sink.endpoint.operation* | The operation to perform One of: [putRule] [putTargets] [removeTargets] [deleteRule] [enableRule] [disableRule] [describeRule] [listRules] | "putRule" | HIGH
 | *camel.sink.endpoint.pojoRequest* | If we want to use a POJO request as body or not | false | MEDIUM
 | *camel.sink.endpoint.proxyHost* | To define a proxy host when instantiating the Eventbridge client | null | MEDIUM
 | *camel.sink.endpoint.proxyPort* | To define a proxy port when instantiating the Eventbridge client | null | MEDIUM
@@ -50,7 +50,7 @@ The camel-aws2-eventbridge sink connector supports 31 options, which are listed 
 | *camel.component.aws2-eventbridge.eventbridgeClient* | To use a existing configured AWS Eventbridge as client | null | MEDIUM
 | *camel.component.aws2-eventbridge.eventPatternFile* | EventPattern File | null | MEDIUM
 | *camel.component.aws2-eventbridge.lazyStartProducer* | Whether the producer should be started lazy (on the first message). By starting lazy you can use this to allow CamelContext and routes to startup in situations where a producer may otherwise fail during starting and cause the route to fail being started. By deferring this startup to be lazy then the startup failure can be handled during routing messages via Camel's routing error handlers. Beware that when the first message is processed then creating and starting the producer may take a little time and prolong the total processing time of the processing. | false | MEDIUM
-| *camel.component.aws2-eventbridge.operation* | The operation to perform One of: [putRule] [putTargets] [removeTargets] [deleteRule] [enableRule] [disableRule] [listRules] | "putRule" | HIGH
+| *camel.component.aws2-eventbridge.operation* | The operation to perform One of: [putRule] [putTargets] [removeTargets] [deleteRule] [enableRule] [disableRule] [describeRule] [listRules] | "putRule" | HIGH
 | *camel.component.aws2-eventbridge.pojoRequest* | If we want to use a POJO request as body or not | false | MEDIUM
 | *camel.component.aws2-eventbridge.proxyHost* | To define a proxy host when instantiating the Eventbridge client | null | MEDIUM
 | *camel.component.aws2-eventbridge.proxyPort* | To define a proxy port when instantiating the Eventbridge client | null | MEDIUM

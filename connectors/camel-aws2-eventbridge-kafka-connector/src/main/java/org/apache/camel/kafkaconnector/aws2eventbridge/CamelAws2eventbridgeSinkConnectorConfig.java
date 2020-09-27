@@ -42,7 +42,7 @@ public class CamelAws2eventbridgeSinkConnectorConfig
     public static final String CAMEL_SINK_AWS2EVENTBRIDGE_ENDPOINT_LAZY_START_PRODUCER_DOC = "Whether the producer should be started lazy (on the first message). By starting lazy you can use this to allow CamelContext and routes to startup in situations where a producer may otherwise fail during starting and cause the route to fail being started. By deferring this startup to be lazy then the startup failure can be handled during routing messages via Camel's routing error handlers. Beware that when the first message is processed then creating and starting the producer may take a little time and prolong the total processing time of the processing.";
     public static final Boolean CAMEL_SINK_AWS2EVENTBRIDGE_ENDPOINT_LAZY_START_PRODUCER_DEFAULT = false;
     public static final String CAMEL_SINK_AWS2EVENTBRIDGE_ENDPOINT_OPERATION_CONF = "camel.sink.endpoint.operation";
-    public static final String CAMEL_SINK_AWS2EVENTBRIDGE_ENDPOINT_OPERATION_DOC = "The operation to perform One of: [putRule] [putTargets] [removeTargets] [deleteRule] [enableRule] [disableRule] [listRules]";
+    public static final String CAMEL_SINK_AWS2EVENTBRIDGE_ENDPOINT_OPERATION_DOC = "The operation to perform One of: [putRule] [putTargets] [removeTargets] [deleteRule] [enableRule] [disableRule] [describeRule] [listRules]";
     public static final String CAMEL_SINK_AWS2EVENTBRIDGE_ENDPOINT_OPERATION_DEFAULT = "putRule";
     public static final String CAMEL_SINK_AWS2EVENTBRIDGE_ENDPOINT_POJO_REQUEST_CONF = "camel.sink.endpoint.pojoRequest";
     public static final String CAMEL_SINK_AWS2EVENTBRIDGE_ENDPOINT_POJO_REQUEST_DOC = "If we want to use a POJO request as body or not";
@@ -90,7 +90,7 @@ public class CamelAws2eventbridgeSinkConnectorConfig
     public static final String CAMEL_SINK_AWS2EVENTBRIDGE_COMPONENT_LAZY_START_PRODUCER_DOC = "Whether the producer should be started lazy (on the first message). By starting lazy you can use this to allow CamelContext and routes to startup in situations where a producer may otherwise fail during starting and cause the route to fail being started. By deferring this startup to be lazy then the startup failure can be handled during routing messages via Camel's routing error handlers. Beware that when the first message is processed then creating and starting the producer may take a little time and prolong the total processing time of the processing.";
     public static final Boolean CAMEL_SINK_AWS2EVENTBRIDGE_COMPONENT_LAZY_START_PRODUCER_DEFAULT = false;
     public static final String CAMEL_SINK_AWS2EVENTBRIDGE_COMPONENT_OPERATION_CONF = "camel.component.aws2-eventbridge.operation";
-    public static final String CAMEL_SINK_AWS2EVENTBRIDGE_COMPONENT_OPERATION_DOC = "The operation to perform One of: [putRule] [putTargets] [removeTargets] [deleteRule] [enableRule] [disableRule] [listRules]";
+    public static final String CAMEL_SINK_AWS2EVENTBRIDGE_COMPONENT_OPERATION_DOC = "The operation to perform One of: [putRule] [putTargets] [removeTargets] [deleteRule] [enableRule] [disableRule] [describeRule] [listRules]";
     public static final String CAMEL_SINK_AWS2EVENTBRIDGE_COMPONENT_OPERATION_DEFAULT = "putRule";
     public static final String CAMEL_SINK_AWS2EVENTBRIDGE_COMPONENT_POJO_REQUEST_CONF = "camel.component.aws2-eventbridge.pojoRequest";
     public static final String CAMEL_SINK_AWS2EVENTBRIDGE_COMPONENT_POJO_REQUEST_DOC = "If we want to use a POJO request as body or not";
